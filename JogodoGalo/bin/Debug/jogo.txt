@@ -1,0 +1,5 @@
+jogador 2
+jogador 1
+jogador 1
+jogador 2
+jogador 2

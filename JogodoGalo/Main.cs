@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -26,6 +27,28 @@ namespace JogodoGalo
             Galo.Show();
 
 
+
+        }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fecharJogoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if(ActiveMdiChild != null)
+            {
+                ActiveMdiChild.Close();
+            }
+        }
+
+        private void scoreBoardToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            Scoreboard pontos = new Scoreboard();
+
+            pontos.ShowDialog();
 
         }
     }

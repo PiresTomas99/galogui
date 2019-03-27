@@ -237,10 +237,14 @@ namespace JogodoGalo
                 if(vitoria == "X")
                 {
                     MessageBox.Show("Jogador 1 ganhou!!!");
+
+                    Texto("jogador 1");
                 }
                 else
                 {
                     MessageBox.Show("Jogador 2 ganhou!!!");
+
+                    Texto("jogador 2");
                 }
             }
 
@@ -249,10 +253,14 @@ namespace JogodoGalo
                 if (vitoria == "X")
                 {
                     MessageBox.Show("Jogador 1 ganhou!!!");
+
+                    Texto("jogador 2");
                 }
                 else
                 {
                     MessageBox.Show("Jogador 2 ganhou!!!");
+
+                    Texto("jogador 2");
                 }
             }
 
@@ -261,10 +269,14 @@ namespace JogodoGalo
                 if (vitoria == "X")
                 {
                     MessageBox.Show("Jogador 1 ganhou!!!");
+
+                    Texto("jogador 1");
                 }
                 else
                 {
                     MessageBox.Show("Jogador 2 ganhou!!!");
+
+                    Texto("jogador 2");
                 }
             }
 
@@ -275,10 +287,14 @@ namespace JogodoGalo
                 if (vitoria == "X")
                 {
                     MessageBox.Show("Jogador 1 ganhou!!!");
+
+                    Texto("jogador 1");
                 }
                 else
                 {
                     MessageBox.Show("Jogador 2 ganhou!!!");
+
+                    Texto("jogador 2");
                 }
             }
 
@@ -287,10 +303,14 @@ namespace JogodoGalo
                 if (vitoria == "X")
                 {
                     MessageBox.Show("Jogador 1 ganhou!!!");
+
+                    Texto("jogador 1");
                 }
                 else
                 {
                     MessageBox.Show("Jogador 2 ganhou!!!");
+
+                    Texto("jogador 2");
                 }
             }
 
@@ -299,10 +319,14 @@ namespace JogodoGalo
                 if (vitoria == "X")
                 {
                     MessageBox.Show("Jogador 1 ganhou!!!");
+
+                    Texto("jogador 1");
                 }
                 else
                 {
                     MessageBox.Show("Jogador 2 ganhou!!!");
+
+                    Texto("jogador 2");
                 }
             }
 
@@ -313,10 +337,14 @@ namespace JogodoGalo
                 if (vitoria == "X")
                 {
                     MessageBox.Show("Jogador 1 ganhou!!!");
+
+                    Texto("jogador 1");
                 }
                 else
                 {
                     MessageBox.Show("Jogador 2 ganhou!!!");
+
+                    Texto("jogador 2");
                 }
             }
 
@@ -325,10 +353,14 @@ namespace JogodoGalo
                 if (vitoria == "X")
                 {
                     MessageBox.Show("Jogador 1 ganhou!!!");
+
+                    Texto("jogador 1");
                 }
                 else
                 {
                     MessageBox.Show("Jogador 2 ganhou!!!");
+
+                    Texto("jogador 2");
                 }
             }
 
@@ -341,7 +373,17 @@ namespace JogodoGalo
 
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
 
+        }
+
+        public void Texto(string ganhou)
+        {
+            System.IO.StreamWriter file = new System.IO.StreamWriter("jogo.txt", true);
+            file.WriteLine(ganhou);
+            file.Close();
+        }
     }
 
 }
