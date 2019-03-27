@@ -32,6 +32,7 @@
             this.novoJogoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fecharJogoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.scoreBoardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -40,7 +41,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.novoJogoToolStripMenuItem,
             this.fecharJogoToolStripMenuItem,
-            this.scoreBoardToolStripMenuItem});
+            this.scoreBoardToolStripMenuItem,
+            this.sairToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(759, 24);
@@ -68,6 +70,13 @@
             this.scoreBoardToolStripMenuItem.Text = "ScoreBoard";
             this.scoreBoardToolStripMenuItem.Click += new System.EventHandler(this.scoreBoardToolStripMenuItem_Click);
             // 
+            // sairToolStripMenuItem
+            // 
+            this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
+            this.sairToolStripMenuItem.Text = "Sair";
+            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -92,5 +101,6 @@
         private System.Windows.Forms.ToolStripMenuItem novoJogoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fecharJogoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem scoreBoardToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
     }
 }
